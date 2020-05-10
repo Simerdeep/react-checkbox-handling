@@ -1,5 +1,5 @@
 {
-  "name": "@simerdeep123/react-checkbox-handling",
+  "name": "react-checkbox-handling",
   "version": "0.1.0",
   "private": false,
   "dependencies": {
@@ -42,8 +42,8 @@
     "eslint-plugin-react": "^7.19.0",
     "flow-bin": "^0.124.0"
   },
-  "description": "This package is used to handle checkbox in react",
-  "main": "index.js",
+  "description": "To handle checkbox data with or without using shift key",
+  "main": "src/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Simerdeep/react-checkbox-handling.git"
