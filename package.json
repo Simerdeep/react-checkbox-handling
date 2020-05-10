@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "private": false,
   "dependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/preset-flow": "^7.9.0",
+    "@babel/register": "^7.9.0",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
@@ -20,7 +24,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint \"src/**\"",
-    "flow": "flow"
+    "flow": "flow",
+    "publish:npm": "rm -rf dist && mkdir dist &&  babel src -d dist --copy-files"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -38,12 +43,17 @@
     ]
   },
   "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/helper-plugin-utils": "^7.8.3",
+    "@babel/node": "^7.8.7",
+    "@babel/preset-env": "^7.9.6",
+    "@babel/preset-react": "^7.9.4",
     "eslint": "^7.0.0",
     "eslint-plugin-react": "^7.19.0",
     "flow-bin": "^0.124.0"
   },
   "description": "To handle checkbox data with or without using shift key",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Simerdeep/react-checkbox-handling.git"
