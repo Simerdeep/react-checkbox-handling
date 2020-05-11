@@ -1,5 +1,7 @@
 # react-checkbox-handling
 
+A HOC to manage checkboxes state
+
 ## Installation
 
 ```sh
@@ -7,13 +9,13 @@ npm install react-checkbox-handling
 ```
 ## Usage
 
-1. Import handleCheckbox
+1 . Import handleCheckbox
 
 ```js
 import  handleCheckbox  from 'react-checkbox-handling';
 ```
 
-2. Pass your component to handlechekbox
+2 . Pass your component to handlechekbox
 
 ```js
 export default handleCheckbox(ComponentName,Configuration(optional))
