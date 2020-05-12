@@ -2,6 +2,10 @@
 
 A HOC to manage checkboxes state
 
+## Demo
+
+[![Edit ReactCheckbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/sharp-raman-pzp90?fontsize=14&hidenavigation=1&theme=dark)
+
 ## Installation
 
 ```sh
@@ -33,15 +37,15 @@ export default handleCheckbox(ComponentName,Configuration(optional))
 | Prop Name                | Type                  | Default Value   | Description                         
 | :----------------------- | :-------------------- | :------------   | :-----------------------------------|
 | checkedItems             | Array                 | []              | Checked values                      
-| checkAll                 | Function              | NA              | To check all tha values             
-| uncheckAll               | Function              | NA              | To uncheck all tha values           
+| checkAll                 | Function              | NA              | To check all the values             
+| uncheckAll               | Function              | NA              | To uncheck all the values           
 | updateCheckedItems       | Function              | NA              | To update the checked item array      
 | updateTotalItems         | Function              | NA              | To update the total list of items
 
 
 # Example
 
-Copy the example folder in you project and run it.
+Copy the example folder in your project and run it.
 
 ## Demo (With Shift Key)
 
