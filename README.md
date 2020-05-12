@@ -47,7 +47,7 @@ export default handleCheckbox(ComponentName,Configuration(optional))
 
 Copy the example folder in your project and run it.
 
-## Demo (With Shift Key)
+## How it works
 
 <img src = './demo.gif' />
 
