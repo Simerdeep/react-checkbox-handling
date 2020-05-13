@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Simerdeep/react-checkbox-handlingstatic/css/main.ef538fed.chunk.css",
+    "main.js": "/Simerdeep/react-checkbox-handlingstatic/js/main.741e2267.chunk.js",
+    "main.js.map": "/Simerdeep/react-checkbox-handlingstatic/js/main.741e2267.chunk.js.map",
+    "runtime-main.js": "/Simerdeep/react-checkbox-handlingstatic/js/runtime-main.63346081.js",
+    "runtime-main.js.map": "/Simerdeep/react-checkbox-handlingstatic/js/runtime-main.63346081.js.map",
+    "static/css/2.69121389.chunk.css": "/Simerdeep/react-checkbox-handlingstatic/css/2.69121389.chunk.css",
+    "static/js/2.03d09e7a.chunk.js": "/Simerdeep/react-checkbox-handlingstatic/js/2.03d09e7a.chunk.js",
+    "static/js/2.03d09e7a.chunk.js.map": "/Simerdeep/react-checkbox-handlingstatic/js/2.03d09e7a.chunk.js.map",
+    "index.html": "/Simerdeep/react-checkbox-handlingindex.html",
+    "precache-manifest.6eb04b7bf25c6609d9ccc1033810c9cd.js": "/Simerdeep/react-checkbox-handlingprecache-manifest.6eb04b7bf25c6609d9ccc1033810c9cd.js",
+    "service-worker.js": "/Simerdeep/react-checkbox-handlingservice-worker.js",
+    "static/css/2.69121389.chunk.css.map": "/Simerdeep/react-checkbox-handlingstatic/css/2.69121389.chunk.css.map",
+    "static/css/main.ef538fed.chunk.css.map": "/Simerdeep/react-checkbox-handlingstatic/css/main.ef538fed.chunk.css.map",
+    "static/js/2.03d09e7a.chunk.js.LICENSE.txt": "/Simerdeep/react-checkbox-handlingstatic/js/2.03d09e7a.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.63346081.js",
+    "static/css/2.69121389.chunk.css",
+    "static/js/2.03d09e7a.chunk.js",
+    "static/css/main.ef538fed.chunk.css",
+    "static/js/main.741e2267.chunk.js"
+  ]
+}
