@@ -6,11 +6,21 @@ A HOC to manage checkboxes state
 
 [![Edit ReactCheckbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/sharp-raman-pzp90?fontsize=14&hidenavigation=1&theme=dark)
 
+Or see it on [Github Page](https://simerdeep.github.io/react-checkbox-handling/).
+
+
 ## Installation
 
 ```sh
 npm install react-checkbox-handling
 ```
+
+or
+
+```sh
+yarn add react-checkbox-handling
+```
+
 ## Usage
 
 1 . Import handleCheckbox
@@ -19,7 +29,7 @@ npm install react-checkbox-handling
 import  handleCheckbox  from 'react-checkbox-handling';
 ```
 
-2 . Pass your component to handlechekbox
+2 . Pass your component to handleCheckbox
 
 ```js
 export default handleCheckbox(ComponentName,Configuration(optional))
