@@ -4,7 +4,7 @@ import React, { PureComponent } from 'react';
 import Table from 'react-bootstrap/Table';
 
 import './App.css';
-import  handleCheckbox  from './HandleCheckboxHOC';
+import  handleCheckbox  from '../HandleCheckboxHOC';
 
 function createDummyArray(arraySize) {
   

@@ -15,12 +15,16 @@
     "npmrc": "^1.1.1",
     "react": "^16.13.1",
     "react-bootstrap": "^1.0.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "react-scripts": "^3.4.1"
   },
   "scripts": {
     "lint": "eslint \"src/**\"",
     "flow": "flow",
-    "publish:npm": "rm -rf dist && mkdir dist &&  babel src -d dist --copy-files"
+    "build": "react-scripts build",
+    "publish:npm": "rm -rf dist && mkdir dist &&  babel src -d dist --copy-files",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -45,7 +49,8 @@
     "@babel/preset-react": "^7.9.4",
     "eslint": "^7.0.0",
     "eslint-plugin-react": "^7.19.0",
-    "flow-bin": "^0.124.0"
+    "flow-bin": "^0.124.0",
+    "gh-pages": "^2.2.0"
   },
   "description": "To handle checkbox data with or without using shift key",
   "main": "dist/index.js",
@@ -64,5 +69,6 @@
   "bugs": {
     "url": "https://github.com/Simerdeep/react-checkbox-handling/issues"
   },
-  "homepage": "https://github.com/Simerdeep/react-checkbox-handling#readme"
+  "homepage": "https://simerdeep.github.io/react-checkbox-handling"
+
 }

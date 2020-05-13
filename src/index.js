@@ -1,3 +1,12 @@
-import  handleCheckbox  from './HandleCheckboxHOC';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './example/App';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-export default handleCheckbox;
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
