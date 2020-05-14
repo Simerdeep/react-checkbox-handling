@@ -1,6 +1,6 @@
 {
   "name": "react-checkbox-handling",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "private": false,
   "dependencies": {
     "@babel/cli": "^7.8.4",
@@ -24,6 +24,7 @@
     "lint": "eslint \"src/**\"",
     "flow": "flow",
     "test": "jest -u",
+    "transpile": "babel src -d dist",
     "publish:npm": "rm -rf dist && mkdir dist &&  babel src -d dist --copy-files"
   },
   "eslintConfig": {

@@ -44,14 +44,17 @@ export default handleCheckbox(ComponentName,Configuration(optional))
 
 ## Props Provided
 
-| Prop Name                | Type                  | Default Value   | Description                         
-| :----------------------- | :-------------------- | :------------   | :-----------------------------------|
-| checkedItems             | Array                 | []              | Checked values                      
-| checkAll                 | Function              | NA              | To check all the values             
-| uncheckAll               | Function              | NA              | To uncheck all the values           
-| updateCheckedItems       | Function              | NA              | To update the checked item array      
-| updateTotalItems         | Function              | NA              | To update the total list of items
+These are all of the available props (and their default values) provided by hoc.
 
+```js
+{
+    checkedItems: [],  //Checked values
+    checkAll:  () => void, //To check all the values  
+    uncheckAll:  () => void, //To uncheck all the values 
+    updateCheckedItems: (checkedItem : Array<Object> | Array<string> | Object | string , addItems: boolean = false ) => void // To update the checked item array , addItems value will be used when array is passed in checkedItem
+    updateTotalItems: (totalItems: Array<Object> | Array<string>) => void //To update the total list of items
+}
+```
 
 # Example
 
