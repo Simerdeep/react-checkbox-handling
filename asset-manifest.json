@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/react-checkbox-handling/static/css/main.ef538fed.chunk.css",
-    "main.js": "/react-checkbox-handling/static/js/main.741e2267.chunk.js",
-    "main.js.map": "/react-checkbox-handling/static/js/main.741e2267.chunk.js.map",
+    "main.css": "/react-checkbox-handling/static/css/main.4cd30649.chunk.css",
+    "main.js": "/react-checkbox-handling/static/js/main.623d231b.chunk.js",
+    "main.js.map": "/react-checkbox-handling/static/js/main.623d231b.chunk.js.map",
     "runtime-main.js": "/react-checkbox-handling/static/js/runtime-main.0708b9dc.js",
     "runtime-main.js.map": "/react-checkbox-handling/static/js/runtime-main.0708b9dc.js.map",
     "static/css/2.69121389.chunk.css": "/react-checkbox-handling/static/css/2.69121389.chunk.css",
-    "static/js/2.03d09e7a.chunk.js": "/react-checkbox-handling/static/js/2.03d09e7a.chunk.js",
-    "static/js/2.03d09e7a.chunk.js.map": "/react-checkbox-handling/static/js/2.03d09e7a.chunk.js.map",
+    "static/js/2.055f831e.chunk.js": "/react-checkbox-handling/static/js/2.055f831e.chunk.js",
+    "static/js/2.055f831e.chunk.js.map": "/react-checkbox-handling/static/js/2.055f831e.chunk.js.map",
     "index.html": "/react-checkbox-handling/index.html",
-    "precache-manifest.86a1cbb52d096837891ad6a535d72a5e.js": "/react-checkbox-handling/precache-manifest.86a1cbb52d096837891ad6a535d72a5e.js",
+    "precache-manifest.8e7553df4660bd945e459854d7a6efcb.js": "/react-checkbox-handling/precache-manifest.8e7553df4660bd945e459854d7a6efcb.js",
     "service-worker.js": "/react-checkbox-handling/service-worker.js",
     "static/css/2.69121389.chunk.css.map": "/react-checkbox-handling/static/css/2.69121389.chunk.css.map",
-    "static/css/main.ef538fed.chunk.css.map": "/react-checkbox-handling/static/css/main.ef538fed.chunk.css.map",
-    "static/js/2.03d09e7a.chunk.js.LICENSE.txt": "/react-checkbox-handling/static/js/2.03d09e7a.chunk.js.LICENSE.txt"
+    "static/css/main.4cd30649.chunk.css.map": "/react-checkbox-handling/static/css/main.4cd30649.chunk.css.map",
+    "static/js/2.055f831e.chunk.js.LICENSE.txt": "/react-checkbox-handling/static/js/2.055f831e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.0708b9dc.js",
     "static/css/2.69121389.chunk.css",
-    "static/js/2.03d09e7a.chunk.js",
-    "static/css/main.ef538fed.chunk.css",
-    "static/js/main.741e2267.chunk.js"
+    "static/js/2.055f831e.chunk.js",
+    "static/css/main.4cd30649.chunk.css",
+    "static/js/main.623d231b.chunk.js"
   ]
 }
