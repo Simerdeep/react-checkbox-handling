@@ -152,56 +152,84 @@ export default function handleCheckbox<Props>(PassedComponent: ComponentType<Pro
         /**
          * To update the checked data
          */
-        updateCheckedItems = (currentChecked: Object| string) => {
+        updateCheckedItems = (currentChecked: Object| string | Array<Object> | Array<string>,addItems: boolean = false) => {
 
             const { checkedItems } = this.state;
 
             let newCheckedItems = [...checkedItems];
 
-            if(this.lastCheckedItem != null) {
+            // To handle array of values
 
-                const isCurrentCheckedIdExistObject = this.isCheckedElementExist(this.state.checkedItems,currentChecked);
+            if(Array.isArray(currentChecked)) {
 
-                if(this.isShiftKeyPressed) {
+                currentChecked.map( (data) => {
 
-                    const isLastCheckedIdExistObject = this.isCheckedElementExist(this.state.checkedItems,this.lastCheckedItem);
-                    const lastCheckedIndex = isLastCheckedIdExistObject.elementIndex;
-                    const lastCheckedExist = isLastCheckedIdExistObject.isExist;
-
-                    if(this.getCheckedId(currentChecked) === this.getCheckedId(this.lastCheckedItem))
-                        newCheckedItems = this.addOrDeleteCheckedItem(newCheckedItems,currentChecked,isLastCheckedIdExistObject);
+                    // To add all the items in the array
+                    if(addItems) 
+                        newCheckedItems.push(data);
+                    // Check if value exist
                     else {
 
-                        // Remove all
-                        if(lastCheckedExist && isCurrentCheckedIdExistObject.isExist) {        
-                            const indexToStart = Math.min(isCurrentCheckedIdExistObject.elementIndex,lastCheckedIndex);
-                            const indexToEnd = Math.max(isCurrentCheckedIdExistObject.elementIndex,lastCheckedIndex);
-                            newCheckedItems.splice(indexToStart, (indexToEnd - indexToStart + 1));
-                        }
+                        let isDataExist = this.isCheckedElementExist(this.state.checkedItems,data);
+                        newCheckedItems = this.addOrDeleteCheckedItem(newCheckedItems,data,isDataExist);
 
-                        else {
-
-                            // Iterate to add or remove element between them
-
-                            newCheckedItems = this.getUpdatedShiftItems(currentChecked,lastCheckedExist,isCurrentCheckedIdExistObject);
-                            
-                        }
                     }
 
-                }
-                else 
-                    newCheckedItems = this.addOrDeleteCheckedItem(newCheckedItems,currentChecked,isCurrentCheckedIdExistObject);
+                });
+
 
             }
-            else 
-                newCheckedItems.push(currentChecked);
+
+            else {
+
+                if(this.lastCheckedItem != null) {
+
+                    const isCurrentCheckedIdExistObject = this.isCheckedElementExist(this.state.checkedItems,currentChecked);
+    
+                    if(this.isShiftKeyPressed) {
+    
+                        const isLastCheckedIdExistObject = this.isCheckedElementExist(this.state.checkedItems,this.lastCheckedItem);
+                        const lastCheckedIndex = isLastCheckedIdExistObject.elementIndex;
+                        const lastCheckedExist = isLastCheckedIdExistObject.isExist;
+    
+                        if(this.getCheckedId(currentChecked) === this.getCheckedId(this.lastCheckedItem))
+                            newCheckedItems = this.addOrDeleteCheckedItem(newCheckedItems,currentChecked,isLastCheckedIdExistObject);
+                        else {
+    
+                            // Remove all
+                            if(lastCheckedExist && isCurrentCheckedIdExistObject.isExist) {        
+                                const indexToStart = Math.min(isCurrentCheckedIdExistObject.elementIndex,lastCheckedIndex);
+                                const indexToEnd = Math.max(isCurrentCheckedIdExistObject.elementIndex,lastCheckedIndex);
+                                newCheckedItems.splice(indexToStart, (indexToEnd - indexToStart + 1));
+                            }
+    
+                            else {
+    
+                                // Iterate to add or remove element between them
+    
+                                newCheckedItems = this.getUpdatedShiftItems(currentChecked,lastCheckedExist,isCurrentCheckedIdExistObject);
+                                
+                            }
+                        }
+    
+                    }
+                    else 
+                        newCheckedItems = this.addOrDeleteCheckedItem(newCheckedItems,currentChecked,isCurrentCheckedIdExistObject);
+    
+                }
+                else 
+                    newCheckedItems.push(currentChecked);
+                
+                this.lastCheckedItem = currentChecked;
+
+
+            }
 
 
             this.setState({
                 checkedItems: newCheckedItems,
             });
 
-            this.lastCheckedItem = currentChecked;
 
 
         }
