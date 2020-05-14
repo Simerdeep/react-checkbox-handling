@@ -4,9 +4,9 @@ import React, { PureComponent } from 'react';
 import Table from 'react-bootstrap/Table';
 
 import './App.css';
-import  handleCheckbox  from '../HandleCheckboxHOC';
+import  handleCheckbox, { CHECK_KEY }  from '../HandleCheckboxHOC';
 
-function createDummyArray(arraySize) {
+export function createDummyArray(arraySize, dataType = "object") {
   
   let dummyData = [];
 
@@ -14,12 +14,18 @@ function createDummyArray(arraySize) {
 
     let dummyvalue = "Test" + value;
 
-    dummyData.push ({
-      fName: dummyvalue,
-      lName: dummyvalue,
-      username: dummyvalue,
-      id: value,
-    });
+    if(dataType === "string")
+      dummyData.push(value);
+    else {
+      dummyData.push ({
+        fName: dummyvalue,
+        lName: dummyvalue,
+        username: dummyvalue,
+        id: value,
+        [CHECK_KEY]: value,
+      });
+    }
+    
   }
 
   return dummyData;
@@ -34,7 +40,7 @@ type Props = {
   updateTotalItems: (totalData: Array<Object>) => void
 }
 
-class App extends PureComponent<Props,{}> {
+export class App extends PureComponent<Props,{}> {
 
   dummyArray = createDummyArray(6);
 
