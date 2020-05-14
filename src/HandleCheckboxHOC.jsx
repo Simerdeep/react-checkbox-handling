@@ -2,8 +2,8 @@
 
 import React, { PureComponent, type ComponentType } from "react";
 
-const SHIFT_CODE = 16;
-const CHECK_KEY = "CHECK_KEY";
+export const SHIFT_CODE = 16;
+export const CHECK_KEY = "CHECK_KEY";
 
 export default function handleCheckbox<Props>(PassedComponent: ComponentType<Props>,Configuration: Object = {}) {
 
@@ -103,7 +103,7 @@ export default function handleCheckbox<Props>(PassedComponent: ComponentType<Pro
          */
         getKeyToCheck = () => {
 
-            if(typeof(this.totalItems[0]) === "string")
+            if(typeof(this.totalItems[0]) === "string" || typeof(this.totalItems[0]) === "number")
                 return null;
             else {
                 
@@ -158,7 +158,7 @@ export default function handleCheckbox<Props>(PassedComponent: ComponentType<Pro
 
             let newCheckedItems = [...checkedItems];
 
-            if(this.lastCheckedItem) {
+            if(this.lastCheckedItem != null) {
 
                 const isCurrentCheckedIdExistObject = this.isCheckedElementExist(this.state.checkedItems,currentChecked);
 
