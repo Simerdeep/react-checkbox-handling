@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b16e9b0464652c6856e5beeef613e0cc",
+    "revision": "accd76b798a166fa04b5f549f3365442",
     "url": "/react-checkbox-handling/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-checkbox-handling/static/css/2.69121389.chunk.css"
   },
   {
-    "revision": "1ddc54df67a5fca67440",
+    "revision": "2aca71ca917804f69a68",
     "url": "/react-checkbox-handling/static/css/main.4cd30649.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-checkbox-handling/static/js/2.055f831e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1ddc54df67a5fca67440",
-    "url": "/react-checkbox-handling/static/js/main.623d231b.chunk.js"
+    "revision": "2aca71ca917804f69a68",
+    "url": "/react-checkbox-handling/static/js/main.387e705f.chunk.js"
   },
   {
     "revision": "3710f0477156d9494685",
